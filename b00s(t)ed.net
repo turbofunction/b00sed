@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/Users/jne/Shared/Projects/b00sed/b00s(t)ed.sch")
-    (date "2019 February 12, Tuesday 13:27:26")
+    (date "2019 February 12, Tuesday 14:08:33")
     (tool "Eeschema (5.0.1-3-g963ef8bb5)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
