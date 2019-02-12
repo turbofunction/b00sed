@@ -222,17 +222,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N7002W-D.PDF" H 5350 2725 50  0001 L
 	1    5150 2650
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Power_Management:LM5050-2 U1
-U 1 1 5C62AAD7
-P 5900 3200
-F 0 "U1" H 6279 3246 50  0000 L CNN
-F 1 "LM5050-2" H 5850 3200 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5900 2800 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm74610-q1.pdf" H 5900 3400 50  0001 C CNN
-	1    5900 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 2400 5650 2400
 Wire Wire Line
@@ -246,7 +235,7 @@ Wire Wire Line
 	6150 2800 6150 2400
 Connection ~ 6150 2400
 Wire Wire Line
-	6150 2400 6550 2400
+	6150 2400 6400 2400
 Wire Wire Line
 	5900 2800 5900 2700
 Connection ~ 5900 2700
@@ -262,10 +251,28 @@ Wire Wire Line
 Connection ~ 5900 3700
 Connection ~ 6550 2900
 Wire Wire Line
-	5450 3400 5400 3400
+	5450 3350 5400 3350
 Wire Wire Line
-	5400 3400 5400 3700
+	5400 3350 5400 3700
 Connection ~ 5400 3700
 Wire Wire Line
 	5400 3700 5900 3700
+$Comp
+L Power_Management:LM5050-1 U1
+U 1 1 5C62EAA0
+P 5900 3200
+F 0 "U1" H 6100 2850 50  0000 L CNN
+F 1 "LM5050-1" H 5700 3200 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5900 2800 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm74610-q1.pdf" H 5900 3400 50  0001 C CNN
+	1    5900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3350 6400 3350
+Wire Wire Line
+	6400 3350 6400 2400
+Connection ~ 6400 2400
+Wire Wire Line
+	6400 2400 6550 2400
 $EndSCHEMATC
